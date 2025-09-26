@@ -1,0 +1,25 @@
+extends Node
+
+var screen_size = Vector2(1920, 1080)
+var screen_center = Vector2(screen_size.x / 2, screen_size.y / 2)
+var tile_size = 128
+var tile_scene = preload("res://tile.tscn")
+var grid_offset = (tile_size * 3)/2
+var grid = Vector2(tile_size*3, tile_size*3)
+
+
+
+
+func _ready() -> void:
+	
+	for x in range(1):
+		for y in range(1):
+			var tile = tile_scene.instantiate()
+			tile.position = Vector2(tile_size * x, tile_size * y)
+			add_child(tile)
+	print(grid_offset)
+
+	
+func _process(delta: float) -> void:
+	pass
+	
