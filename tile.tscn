@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cmrodvdndtkcf"]
 
 [node name="ReferenceRect" type="ReferenceRect"]
-clip_contents = true
 offset_right = 128.0
 offset_bottom = 128.0
 border_color = Color(0.142736, 0.464944, 0.650775, 1)
