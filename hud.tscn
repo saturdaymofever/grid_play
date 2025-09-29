@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://btxilb7hhaeh0"]
+[gd_scene load_steps=3 format=3 uid="uid://btxilb7hhaeh0"]
+
+[ext_resource type="Script" uid="uid://dhs2rie8200k1" path="res://hud.gd" id="1_37p78"]
 
 [sub_resource type="Theme" id="Theme_wf015"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="hud" type="CanvasLayer"]
 offset = Vector2(1200, 0)
 transform = Transform2D(1, 0, 0, 1, 1200, 0)
+script = ExtResource("1_37p78")
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 209.0
@@ -42,3 +45,5 @@ size_flags_stretch_ratio = 0.0
 theme_override_font_sizes/font_size = 80
 text = "Explore"
 clip_text = true
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]

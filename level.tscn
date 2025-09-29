@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://baeapdowf5sm7" path="res://level.gd" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://bdajaw2qoqpnn" path="res://grid_container.tscn" id="2_vonw3"]
-[ext_resource type="PackedScene" uid="uid://btxilb7hhaeh0" path="res://canvas_layer.tscn" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://btxilb7hhaeh0" path="res://hud.tscn" id="3_oi3di"]
 
 [node name="level" type="Node"]
 script = ExtResource("1_u52ul")
@@ -13,9 +13,6 @@ offset_top = 151.0
 offset_right = 1288.0
 offset_bottom = 1311.0
 
-[node name="CanvasLayer" parent="." instance=ExtResource("3_oi3di")]
+[node name="hud" parent="." instance=ExtResource("3_oi3di")]
 
-[node name="Button" parent="CanvasLayer/Panel" index="2"]
-layout_mode = 0
-
-[editable path="CanvasLayer"]
+[connection signal="start_exploring" from="hud" to="." method="_on_hud_start_exploring"]
