@@ -22,11 +22,7 @@ func _ready() -> void:
 	var hud = hud_scene.instantiate()
 	add_child(hud)
 
-
 	
 func _process(delta: float) -> void:
 	pass
 	
-
-func _on_button_pressed() -> void:
-	print("pressed")

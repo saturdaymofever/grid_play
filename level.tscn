@@ -15,6 +15,7 @@ offset_bottom = 1311.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource("3_oi3di")]
 
-[connection signal="pressed" from="CanvasLayer/Panel/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[node name="Button" parent="CanvasLayer/Panel" index="2"]
+layout_mode = 0
 
 [editable path="CanvasLayer"]
