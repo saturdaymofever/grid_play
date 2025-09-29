@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://btxilb7hhaeh0"]
+
+[sub_resource type="Theme" id="Theme_wf015"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+offset = Vector2(1200, 0)
+transform = Transform2D(1, 0, 0, 1, 1200, 0)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 209.0
+offset_top = 1.0
+offset_right = 1360.0
+offset_bottom = 1440.0
+theme = SubResource("Theme_wf015")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 284.0
+offset_right = 837.0
+offset_bottom = 410.0
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+text = "Explore"
+clip_text = true
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 21.0
+offset_right = 783.0
+offset_bottom = 183.0
+text = "Grid Play"
+placeholder_text = "qsxqsx"
