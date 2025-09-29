@@ -17,8 +17,8 @@ func _ready() -> void:
 #			var tile = tile_scene.instantiate()
 #			tile.position = Vector2(tile_size * x + margin_x, tile_size * y + margin_y)
 #			add_child(tile)
-	var grid = grid_scene.instantiate()
-	add_child(grid)
+#	var grid = grid_scene.instantiate()
+#	add_child(grid)
 	var hud = hud_scene.instantiate()
 	add_child(hud)
 
@@ -27,3 +27,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 	
+
+func _on_button_pressed() -> void:
+	print("pressed")

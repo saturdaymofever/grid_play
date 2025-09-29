@@ -24,14 +24,25 @@ offset_bottom = 410.0
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 0.0
+theme_override_font_sizes/font_size = 80
 text = "Explore"
 clip_text = true
 
-[node name="TextEdit" type="TextEdit" parent="Panel"]
+[node name="title" type="Label" parent="Panel"]
 layout_mode = 0
-offset_left = 353.0
-offset_top = 21.0
-offset_right = 783.0
-offset_bottom = 183.0
+offset_left = 388.0
+offset_top = 61.0
+offset_right = 735.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(0.501961, 0.45098, 0, 1)
+theme_override_font_sizes/font_size = 80
 text = "Grid Play"
-placeholder_text = "qsxqsx"
+
+[node name="PV" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 582.0
+offset_right = 549.0
+offset_bottom = 692.0
+theme_override_font_sizes/font_size = 80
+text = "Point de vie :"
