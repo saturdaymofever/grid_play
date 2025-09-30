@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://l7lrj3psk03u"]
+[gd_scene load_steps=3 format=3 uid="uid://l7lrj3psk03u"]
 
+[ext_resource type="Texture2D" uid="uid://dlsxrhbwyfslw" path="res://img/monster.png" id="1_mrqeg"]
 [ext_resource type="Script" uid="uid://58uha1j8ghif" path="res://monster.gd" id="1_s3gyj"]
 
 [node name="monster" type="Sprite2D"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_mrqeg")
+centered = false
 script = ExtResource("1_s3gyj")
-monster_pv = null
-monster_power = null

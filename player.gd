@@ -5,3 +5,6 @@ extends Sprite2D
 
 func take_damage(amount):
 	pv -= amount
+
+func _ready() -> void:
+	z_index = 1
