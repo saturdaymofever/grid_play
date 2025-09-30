@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beh177f40qy1q"
-path="res://.godot/imported/9.png-68f355946e838e56138766db165017ef.ctex"
+uid="uid://c4nlp28ir324w"
+path="res://.godot/imported/256_Tiles Circle 08.png-f0b3143b062c5ebea54b2b9dbda0b07a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/9.png"
-dest_files=["res://.godot/imported/9.png-68f355946e838e56138766db165017ef.ctex"]
+source_file="res://img/256_Tiles Circle 08.png"
+dest_files=["res://.godot/imported/256_Tiles Circle 08.png-f0b3143b062c5ebea54b2b9dbda0b07a.ctex"]
 
 [params]
 

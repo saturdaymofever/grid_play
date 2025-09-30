@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coxx36lut7kvu"
-path="res://.godot/imported/8.png-89aca1b7d6b17e852fd177564c64c225.ctex"
+uid="uid://du5v66ct5iydu"
+path="res://.godot/imported/256_Tiles Rectangle 03 Red.png-b21a3b091d5834f0b3daafe5574f1ec1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/8.png"
-dest_files=["res://.godot/imported/8.png-89aca1b7d6b17e852fd177564c64c225.ctex"]
+source_file="res://img/256_Tiles Rectangle 03 Red.png"
+dest_files=["res://.godot/imported/256_Tiles Rectangle 03 Red.png-b21a3b091d5834f0b3daafe5574f1ec1.ctex"]
 
 [params]
 

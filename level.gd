@@ -1,6 +1,6 @@
 extends Node
 
-var screen_size = Vector2(2560, 1440)
+var screen_size = Vector2(1920, 1080)
 var tile_size = 384
 var tile_scene = preload("res://tile.tscn")
 var grid_scene = preload("res://grid_container.tscn")

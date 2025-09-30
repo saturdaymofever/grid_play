@@ -1,21 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://bdajaw2qoqpnn"]
+[gd_scene load_steps=10 format=3 uid="uid://di05ogqxh8dr5"]
 
-[ext_resource type="Texture2D" uid="uid://dt08qndngdyr0" path="res://img/1.png" id="1_3psm0"]
-[ext_resource type="Texture2D" uid="uid://bhyci5dsck12l" path="res://img/2.png" id="2_ohh2g"]
-[ext_resource type="Texture2D" uid="uid://bmnjrstmfotgh" path="res://img/3.png" id="3_iwy3r"]
-[ext_resource type="Texture2D" uid="uid://jv3m7wnqh3ys" path="res://img/4.png" id="4_ob1in"]
-[ext_resource type="Texture2D" uid="uid://dgfny7wjnkvsp" path="res://img/5.png" id="5_e4i8f"]
-[ext_resource type="Texture2D" uid="uid://b2ymiyt0ests" path="res://img/6.png" id="6_ubg7u"]
-[ext_resource type="Texture2D" uid="uid://ddvxyb54ioclq" path="res://img/7.png" id="7_13fqr"]
-[ext_resource type="Texture2D" uid="uid://coxx36lut7kvu" path="res://img/8.png" id="8_78i0k"]
-[ext_resource type="Texture2D" uid="uid://beh177f40qy1q" path="res://img/9.png" id="9_m10gu"]
+[ext_resource type="Texture2D" uid="uid://c5a1yh8xrta8v" path="res://img/256_Brick 01 Mud.png" id="1_3psm0"]
+[ext_resource type="Texture2D" uid="uid://cbr6bw0sgsmio" path="res://img/256_Cement 02.png" id="2_ohh2g"]
+[ext_resource type="Texture2D" uid="uid://du5v66ct5iydu" path="res://img/256_Tiles Rectangle 03 Red.png" id="3_iwy3r"]
+[ext_resource type="Texture2D" uid="uid://8eh6111dtsee" path="res://img/256_Tiles Rectangle 04 Red Grass.png" id="4_ob1in"]
+[ext_resource type="Texture2D" uid="uid://blip3u2cwcj0k" path="res://img/256_Sand 01.png" id="5_e4i8f"]
+[ext_resource type="Texture2D" uid="uid://c4nlp28ir324w" path="res://img/256_Tiles Circle 08.png" id="6_ubg7u"]
+[ext_resource type="Texture2D" uid="uid://d3v5w48tngitc" path="res://img/256_Tiles Pattern 07 Mix.png" id="7_13fqr"]
+[ext_resource type="Texture2D" uid="uid://cu04kqcisf4kx" path="res://img/256_Tiles Square 02 Grass.png" id="8_78i0k"]
+[ext_resource type="Texture2D" uid="uid://bb2ljx1rmibek" path="res://img/256_Water Shallow 01.png" id="9_m10gu"]
 
 [node name="GridContainer" type="GridContainer"]
-offset_right = 384.0
-offset_bottom = 384.0
+offset_right = 40.0
+offset_bottom = 40.0
 columns = 3
 
-[node name="TextureRect1" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
 texture = ExtResource("1_3psm0")
 

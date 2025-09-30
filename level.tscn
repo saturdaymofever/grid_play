@@ -1,17 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://7fpd1xoxu2el"]
+[gd_scene load_steps=5 format=3 uid="uid://7fpd1xoxu2el"]
 
 [ext_resource type="Script" uid="uid://baeapdowf5sm7" path="res://level.gd" id="1_u52ul"]
-[ext_resource type="PackedScene" uid="uid://bdajaw2qoqpnn" path="res://grid_container.tscn" id="2_vonw3"]
+[ext_resource type="Texture2D" uid="uid://bsf6orrc4su1q" path="res://img/Reference (2).png" id="2_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://di05ogqxh8dr5" path="res://grid_container.tscn" id="2_vonw3"]
 [ext_resource type="PackedScene" uid="uid://btxilb7hhaeh0" path="res://hud.tscn" id="3_oi3di"]
 
 [node name="level" type="Node"]
 script = ExtResource("1_u52ul")
 
+[node name="background" type="TextureRect" parent="."]
+visibility_layer = 3
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_0b4ue")
+
 [node name="GridContainer" parent="." instance=ExtResource("2_vonw3")]
 offset_left = 128.0
 offset_top = 151.0
-offset_right = 1288.0
-offset_bottom = 1311.0
+offset_right = 904.0
+offset_bottom = 927.0
 
 [node name="hud" parent="." instance=ExtResource("3_oi3di")]
 

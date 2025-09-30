@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2ymiyt0ests"
-path="res://.godot/imported/6.png-5c0b18cb87e7f95d4709b312a8652188.ctex"
+uid="uid://bb2ljx1rmibek"
+path="res://.godot/imported/256_Water Shallow 01.png-31cbadf700c87922622260afcfd51082.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/6.png"
-dest_files=["res://.godot/imported/6.png-5c0b18cb87e7f95d4709b312a8652188.ctex"]
+source_file="res://img/256_Water Shallow 01.png"
+dest_files=["res://.godot/imported/256_Water Shallow 01.png-31cbadf700c87922622260afcfd51082.ctex"]
 
 [params]
 
