@@ -1,11 +1,12 @@
 extends Node
 
-var turn = "player"
-
+var turn = "player_turn"
+var player
+var monster
 
 func _ready() -> void:
 	$hit.visible = false
-	if turn == "player":
+	if turn == "player_turn":
 		$hit.visible = true
 	
 func _process(delta: float) -> void:
@@ -27,3 +28,15 @@ func show_monster_pv(amount:int):
 		$pv_monster.text = "Dead !!!"
 	else:
 		$pv_monster.text = str(amount)
+		
+func set_player(new_player: Sprite2D):
+	player = new_player
+	player.position = Vector2(427, 531)
+	print(player.position)
+
+
+
+func set_monster(new_monster: Sprite2D):
+	monster = new_monster
+	monster.position = Vector2(1117, 531)
+	monster.flip_h = true

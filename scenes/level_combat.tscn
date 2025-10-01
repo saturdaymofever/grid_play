@@ -1,17 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://wrqm2ndrjgte"]
+[gd_scene load_steps=5 format=3 uid="uid://wrqm2ndrjgte"]
 
 [ext_resource type="Script" uid="uid://j7qq1q6uk1xl" path="res://level_combat.gd" id="1_04i44"]
 [ext_resource type="Texture2D" uid="uid://bsf6orrc4su1q" path="res://assets/img/Reference (2).png" id="2_srgvi"]
 [ext_resource type="AudioStream" uid="uid://vpdfuaabmfhb" path="res://assets/music/combat.mp3" id="3_f0igb"]
-[ext_resource type="PackedScene" uid="uid://b2jn240wu0s86" path="res://scenes/player.tscn" id="4_55s0x"]
-[ext_resource type="PackedScene" uid="uid://l7lrj3psk03u" path="res://scenes/monster.tscn" id="5_un28l"]
 [ext_resource type="AudioStream" uid="uid://6u0g8vgna621" path="res://assets/effects/explosion-9-340460.mp3" id="6_2rcik"]
 
 [node name="level_combat" type="Node"]
 script = ExtResource("1_04i44")
 
 [node name="TextureRect" type="TextureRect" parent="."]
-z_index = 1
 offset_right = 1920.0
 offset_bottom = 896.0
 texture = ExtResource("2_srgvi")
@@ -29,24 +26,15 @@ offset_bottom = 1056.0
 theme_override_font_sizes/font_size = 40
 text = "ATTACK"
 
-[node name="player" parent="." instance=ExtResource("4_55s0x")]
-z_index = 1
-position = Vector2(344, 520)
-
-[node name="monster" parent="." instance=ExtResource("5_un28l")]
-z_index = 1
-position = Vector2(1328, 520)
-flip_h = true
-
 [node name="hit2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_2rcik")
 
 [node name="label_pv_monster" type="Label" parent="."]
 z_index = 1
-offset_left = 1360.0
-offset_top = 776.0
-offset_right = 1605.0
-offset_bottom = 832.0
+offset_left = 1447.0
+offset_top = 362.0
+offset_right = 1713.0
+offset_bottom = 418.0
 theme_override_font_sizes/font_size = 40
 text = "Points de vie :"
 

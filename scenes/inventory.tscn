@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://gyywdt5rnbp8"]
+
+[ext_resource type="Script" uid="uid://dvql71hhm7tle" path="res://inventory.gd" id="1_qw0r6"]
+[ext_resource type="Texture2D" uid="uid://dvmk73xffg0e8" path="res://assets/img/color_inventory.png" id="2_hj2ta"]
+
+[node name="inventory" type="GridContainer"]
+clip_contents = true
+offset_top = 1.0
+offset_right = 256.0
+offset_bottom = 257.0
+columns = 2
+script = ExtResource("1_qw0r6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+clip_contents = true
+layout_mode = 2
+texture = ExtResource("2_hj2ta")

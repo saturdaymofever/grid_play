@@ -1,12 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://7fpd1xoxu2el"]
+[gd_scene load_steps=8 format=3 uid="uid://7fpd1xoxu2el"]
 
 [ext_resource type="Script" uid="uid://baeapdowf5sm7" path="res://level.gd" id="1_8c41q"]
 [ext_resource type="Texture2D" uid="uid://bsf6orrc4su1q" path="res://assets/img/Reference (2).png" id="2_olg7q"]
 [ext_resource type="PackedScene" uid="uid://di05ogqxh8dr5" path="res://scenes/grid_container.tscn" id="3_t1rx8"]
 [ext_resource type="PackedScene" uid="uid://btxilb7hhaeh0" path="res://scenes/hud.tscn" id="4_8iemx"]
 [ext_resource type="AudioStream" uid="uid://btc5qbupq3n5w" path="res://assets/music/8-bit-music-no-copyright-background-instrumental-pixel-party-322342.mp3" id="5_64w2a"]
-[ext_resource type="PackedScene" uid="uid://l7lrj3psk03u" path="res://scenes/monster.tscn" id="6_fpun6"]
-[ext_resource type="PackedScene" uid="uid://b2jn240wu0s86" path="res://scenes/player.tscn" id="7_wc255"]
 [ext_resource type="PackedScene" uid="uid://cmrodvdndtkcf" path="res://scenes/grid.tscn" id="8_arp2o"]
 [ext_resource type="AudioStream" uid="uid://bc1gata84jyds" path="res://assets/effects/fx_explore_button.mp3" id="9_ux5qa"]
 
@@ -32,10 +30,6 @@ offset_bottom = 927.0
 stream = ExtResource("5_64w2a")
 autoplay = true
 parameters/looping = true
-
-[node name="monster" parent="." instance=ExtResource("6_fpun6")]
-
-[node name="player" parent="." instance=ExtResource("7_wc255")]
 
 [node name="grid" parent="." instance=ExtResource("8_arp2o")]
 position = Vector2(128, 151)
