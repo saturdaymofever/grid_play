@@ -1,27 +1,24 @@
 extends Node
 
+signal start_exploring
 
 func _ready() -> void:
-	$hud.show_player_pv($player.pv)
 	$grid.grid_compose()
 	var player_coord = $grid.random_coord($grid.grid_size)
 	var monster_coord = $grid.random_coord($grid.grid_size)
 	$player.position = $grid.position + player_coord * $grid.tile_size
 	$monster.position = $grid.position + monster_coord * $grid.tile_size
 
+
 func _process(delta: float) -> void:
 	pass
 
-
-
-
 func _on_hud_start_exploring() -> void:
-	var player_coord = $grid.random_coord($grid.grid_size)
-	var monster_coord = $grid.random_coord($grid.grid_size)
-	$player.position = $grid.position + player_coord * $grid.tile_size
-	$monster.position = $grid.position + monster_coord * $grid.tile_size
-
-func _on_hud_hit_monster() -> void:
-	$hit.play()
-	$monster.take_damage($player.power)
-	$hud.show_player_pv($player.pv)
+	start_exploring.emit()
+	#$fx_explore_button.play()
+	#var player_coord = $grid.random_coord($grid.grid_size)
+	#var monster_coord = $grid.random_coord($grid.grid_size)
+	#$player.position = $grid.position + player_coord * $grid.tile_size
+	#$monster.position = $grid.position + monster_coord * $grid.tile_size
+	#if $player.position == $monster.position:
+		#get_tree().change_scene_to_file("res://scenes/level_combat.tscn")

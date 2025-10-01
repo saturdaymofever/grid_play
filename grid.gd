@@ -12,9 +12,3 @@ func random_coord(grid_size):
 	var x = randi_range(0, grid_size.x -1)
 	var y = randi_range(0, grid_size.y -1)
 	return(Vector2(x, y))
-
-func monster_coord():
-	pass
-	
-
-	
