@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcrp3kdeehk80"]
+
+[ext_resource type="Script" uid="uid://bg170cvtdons1" path="res://grid_play.gd" id="1_th6bp"]
+
+[node name="GridPlay" type="Node"]
+script = ExtResource("1_th6bp")

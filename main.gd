@@ -5,6 +5,7 @@ var player_scene = preload("res://scenes/player.tscn")
 var monster_scene = preload("res://scenes/monster.tscn")
 var level_scene = preload("res://scenes/level.tscn")
 var level_combat_scene = preload("res://scenes/level_combat.tscn")
+var character_init_scene = preload("res://scenes/character_init.tscn")
 
 var player: Sprite2D
 var monster: Sprite2D
@@ -16,6 +17,7 @@ func _ready() -> void:
 	player = player_scene.instantiate()
 	var game_menu = game_menu_scene.instantiate()
 	game_menu.start_game_buton.connect(start_game)
+	character_init_scene.instantiate()
 	add_child(game_menu)
 	
 
@@ -31,7 +33,6 @@ func start_game():
 
 func start_exploration():
 	if $level_combat:
-		print("queu free")
 		$level_combat.queue_free()
 	var level = level_scene.instantiate()
 	if monster.pv <= 0:

@@ -19,7 +19,6 @@ func _on_hud_start_exploring() -> void:
 	$fx_explore_button.play()
 	player_coord = $grid.random_coord($grid.grid_size)
 	monster_coord = $grid.random_coord($grid.grid_size)
-	print(monster.position)
 	if monster.position == player.position:
 		start_combat.emit()
 

@@ -11,8 +11,7 @@ var monster
 func _ready() -> void:
 	show_monster_pv_combat(monster.pv)
 	show_player_pv_combat(player.pv)
-	#if turn == "monster_turn":
-		#player.take_damage(monster.power)
+
 
 func _process(delta: float) -> void:
 	if monster.pv <= 0:
@@ -51,12 +50,8 @@ func show_monster_pv_combat(amount:int):
 		
 func set_player(new_player: Sprite2D):
 	player = new_player
-	player.position = Vector2(427, 531)
-
-
 
 
 func set_monster(new_monster: Sprite2D):
 	monster = new_monster
-	monster.position = Vector2(1117, 531)
 	monster.flip_h = true
