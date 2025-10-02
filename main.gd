@@ -12,8 +12,6 @@ var monster: Sprite2D
 
 
 func _ready() -> void:
-	
-	#player = player_scene.instantiate()
 	monster = monster_scene.instantiate()
 	player = player_scene.instantiate()
 	var game_menu = game_menu_scene.instantiate()
@@ -27,12 +25,21 @@ func _process(_delta: float) -> void:
 
 func start_game():
 	$game_menu.queue_free()
+	add_child(player)
+	add_child(monster)
+	start_exploration()
+
+func start_exploration():
+	if $level_combat:
+		print("queu free")
+		$level_combat.queue_free()
 	var level = level_scene.instantiate()
+	if monster.pv <= 0:
+		monster.pv = 10
+		#monster = monster_scene.instantiate()
 	level.set_player(player)
 	level.set_monster(monster)
 	level.start_combat.connect(start_combat)
-	add_child(player)
-	add_child(monster)
 	add_child(level)
 	
 func start_combat():
@@ -40,4 +47,7 @@ func start_combat():
 	var level_combat = level_combat_scene.instantiate()
 	level_combat.set_player(player)
 	level_combat.set_monster(monster)
+	level_combat.switch_level.connect(start_exploration)
 	add_child(level_combat)
+	
+	# arenommer to level_exploration

@@ -22,6 +22,5 @@ flat = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_5h6fq")
-autoplay = true
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]

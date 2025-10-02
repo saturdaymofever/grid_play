@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://j7qq1q6uk1xl" path="res://level_combat.gd" id="1_04i44"]
 [ext_resource type="Texture2D" uid="uid://bsf6orrc4su1q" path="res://assets/img/Reference (2).png" id="2_srgvi"]
 [ext_resource type="AudioStream" uid="uid://vpdfuaabmfhb" path="res://assets/music/combat.mp3" id="3_f0igb"]
-[ext_resource type="AudioStream" uid="uid://6u0g8vgna621" path="res://assets/effects/explosion-9-340460.mp3" id="6_2rcik"]
+[ext_resource type="AudioStream" uid="uid://ctnrx6aid125x" path="res://assets/effects/epee_sound.mp3" id="4_wp4tw"]
 
 [node name="level_combat" type="Node"]
 script = ExtResource("1_04i44")
@@ -15,7 +15,6 @@ texture = ExtResource("2_srgvi")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_f0igb")
-autoplay = true
 parameters/looping = true
 
 [node name="hit" type="Button" parent="."]
@@ -27,21 +26,18 @@ theme_override_font_sizes/font_size = 40
 text = "ATTACK"
 
 [node name="hit2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_2rcik")
-
-[node name="label_pv_monster" type="Label" parent="."]
-z_index = 1
-offset_left = 1447.0
-offset_top = 362.0
-offset_right = 1713.0
-offset_bottom = 418.0
-theme_override_font_sizes/font_size = 40
-text = "Points de vie :"
+stream = ExtResource("4_wp4tw")
 
 [node name="pv_monster" type="Label" parent="."]
-offset_left = 1626.0
-offset_top = 776.0
-offset_right = 1720.0
-offset_bottom = 832.0
+offset_left = 1248.0
+offset_top = 552.0
+offset_right = 1348.0
+offset_bottom = 652.0
+
+[node name="pv_player" type="Label" parent="."]
+offset_left = 312.0
+offset_top = 560.0
+offset_right = 412.0
+offset_bottom = 660.0
 
 [connection signal="pressed" from="hit" to="." method="_on_hit_pressed"]
