@@ -1,5 +1,6 @@
 extends Node
 
+#test
 # Ici on preload les scenes du player et du monstre, nous en auront besoin
 var player_scene:PackedScene = preload("res://scenes/player.tscn")
 var monster_scene:PackedScene = preload("res://scenes/monster.tscn")
