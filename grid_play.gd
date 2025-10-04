@@ -74,7 +74,7 @@ func instantiate_fight_level():
 
 # ici on instantie et declare les variables de départ
 func _ready() -> void:
-	current_state = State.EXPLORATION
+	current_state = State.FIGHT
 	player = player_scene.instantiate()
 	monster = monster_scene.instantiate()
 	process_exploration_turn()
