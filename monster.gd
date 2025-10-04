@@ -16,4 +16,4 @@ func new_rand_coord(max_coord:Vector2):
 	coord = Vector2(x, y)
 
 func _ready() -> void:
-	z_index = 1
+	z_index = 10

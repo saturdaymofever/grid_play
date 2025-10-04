@@ -3,7 +3,7 @@ extends Node
 var game_menu_scene = preload("res://scenes/game_menu.tscn")
 var player_scene = preload("res://scenes/player.tscn")
 var monster_scene = preload("res://scenes/monster.tscn")
-var level_scene = preload("res://scenes/level.tscn")
+var level_scene = preload("res://scenes/level_exploration.tscn")
 var level_combat_scene = preload("res://scenes/level_combat.tscn")
 var character_init_scene = preload("res://scenes/character_init.tscn")
 

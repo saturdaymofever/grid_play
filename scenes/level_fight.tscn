@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://wrqm2ndrjgte"]
 
-[ext_resource type="Script" uid="uid://j7qq1q6uk1xl" path="res://level_combat.gd" id="1_04i44"]
-[ext_resource type="Texture2D" uid="uid://bsf6orrc4su1q" path="res://assets/img/Reference (2).png" id="2_srgvi"]
-[ext_resource type="AudioStream" uid="uid://vpdfuaabmfhb" path="res://assets/music/combat.mp3" id="3_f0igb"]
-[ext_resource type="AudioStream" uid="uid://ctnrx6aid125x" path="res://assets/effects/epee_sound.mp3" id="4_wp4tw"]
+[ext_resource type="Script" uid="uid://j7qq1q6uk1xl" path="res://level_fight.gd" id="1_73box"]
+[ext_resource type="Texture2D" uid="uid://bsf6orrc4su1q" path="res://assets/img/Reference (2).png" id="2_aaris"]
+[ext_resource type="AudioStream" uid="uid://vpdfuaabmfhb" path="res://assets/music/combat.mp3" id="3_bfyhy"]
+[ext_resource type="AudioStream" uid="uid://ctnrx6aid125x" path="res://assets/effects/epee_sound.mp3" id="4_a5kjk"]
 
 [node name="level_combat" type="Node"]
-script = ExtResource("1_04i44")
+script = ExtResource("1_73box")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1920.0
 offset_bottom = 896.0
-texture = ExtResource("2_srgvi")
+texture = ExtResource("2_aaris")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_f0igb")
+stream = ExtResource("3_bfyhy")
 parameters/looping = true
 
 [node name="hit" type="Button" parent="."]
@@ -26,7 +26,7 @@ theme_override_font_sizes/font_size = 40
 text = "ATTACK"
 
 [node name="hit2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_wp4tw")
+stream = ExtResource("4_a5kjk")
 
 [node name="pv_monster" type="Label" parent="."]
 offset_left = 1248.0

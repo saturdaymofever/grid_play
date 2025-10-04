@@ -17,4 +17,4 @@ func take_damage(amount):
 	pv -= amount
 
 func _ready() -> void:
-	z_index = 1
+	z_index = 10

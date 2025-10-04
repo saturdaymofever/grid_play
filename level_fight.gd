@@ -3,8 +3,9 @@ extends Node
 signal switch_level
 
 var turn = "player_turn"
-var player
-var monster
+
+var player:Player
+var monster:Monster
 
 
 
@@ -51,7 +52,5 @@ func show_monster_pv_combat(amount:int):
 func set_player(new_player: Sprite2D):
 	player = new_player
 
-
 func set_monster(new_monster: Sprite2D):
 	monster = new_monster
-	monster.flip_h = true
